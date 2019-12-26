@@ -11,10 +11,13 @@ var currentTotal = 0 //holds current total count to be added to during gameplay
 // display random number between 19 and 120 at start of game
 $(document).ready(function(){
     targetNumber = Math.floor(Math.random() * (120-19) + 19);
-    console.log(targetNumber);
+
+    $("#target-number-div").html(targetNumber);
+    $("#total-score-div").html(currentTotal);
 
 // assign random number to each crystalbutton (between 1-12)
     pinkCrystal = Math.floor(Math.random() * (12-1) + 1);
+    $("#pink-crystal").attr(pinkCrystal);
     orangeCrystal = Math.floor(Math.random() * (12-1) + 1);
     blueCrystal = Math.floor(Math.random() * (12-1) + 1);
     purpleCrystal = Math.floor(Math.random() * (12-1) + 1);
@@ -23,8 +26,9 @@ $(document).ready(function(){
     currentTotal = 0;
 
 //when you click on a crystal add the value to the currentTotal 
-    $("crystal-button").on("click", function(){
-
+    $(".crystal-button").on("click", function(){
+    
+    $("#target-number-div").text(currentTotal + this.val());
    
 //if currentTotal equals randomNumber, add one to wins and generate new randomNumber and crystal button numbers and clear currentTotal
 
