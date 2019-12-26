@@ -7,7 +7,9 @@ https://github.com/kimberlycase91/unit-4-game -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -24,7 +26,7 @@ https://github.com/kimberlycase91/unit-4-game -->
     <p>Each time when the game starts, the game will change the values of each crystal.</p>
 </div>
 <!--random number div-->
-<div id="random-number-div"></div>
+<div id="target-number-div"></div>
 
 <!--win/loss counter div-->
 <div>
@@ -36,10 +38,11 @@ https://github.com/kimberlycase91/unit-4-game -->
 
 <!--four crystal image buttons -->
 <div>
-<img src="assets/images/pink-crystal.png" alt="pink crystal">
-<img src="assets/images/orange crystal.png" alt="orange crystal">
-<img src="assets/images/blue crystal.png" alt="blue crystal">
-<img src="assets/images/purple crystal.png" alt="purple crystal">
+<button id = "pink-crystal"><img src="assets/images/pink-crystal.png" alt="pink crystal" height="150" width="150"></button>
+<button id = "orange-crystal"><img src="assets/images/orange crystal.png" alt="orange crystal" height="150" width="150"></button>
+<button id = "blue-crystal"><img src="assets/images/blue crystal.png" alt="blue crystal" height="150" width="150"></button>
+<button id = "purple-crystal"><img src="assets/images/purple crystal.png" alt="purple crystal" height="150" width="150"></button>
+
 </div>
 
 <!--"your total score is:" div-->
