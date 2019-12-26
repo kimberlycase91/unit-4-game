@@ -7,22 +7,44 @@ https://github.com/kimberlycase91/unit-4-game -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 <!--heading-->
+<h1>Mystery Crystals Collector</h1>
 
 <!--instructions div-->
-
+<div>
+    <p>you will be given a random number at the start of the game.</p>
+    <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+    <p>The value of each crystal is hidden from you until you click on it and see what has been added to your total score.</p>
+    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+</div>
 <!--random number div-->
+<div id="random-number-div"></div>
 
 <!--win/loss counter div-->
+<div>
+    <div>Wins: <div id="wins-div"></div>
+        </div>
+    <div>Losses: <div id="losses-div"></div>
+        </div>
+</div>
 
 <!--four crystal image buttons -->
+<div>
+  <!---insert images here-->  
+</div>
 
 <!--"your total score is:" div-->
+<div>Your total score is: </div>
 
 <!--currenttotal div-->
+<div id="total-score-div"></div>
 
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
