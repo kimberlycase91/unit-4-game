@@ -2,6 +2,7 @@
 https://github.com/kimberlycase91/unit-4-game -->
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,43 +15,87 @@ https://github.com/kimberlycase91/unit-4-game -->
 </head>
 
 <body>
-<!--heading-->
-<h1>Mystery Crystals</h1>
-
-<!--instructions div-->
-<div>
-    <p>you will be given a random number at the start of the game.</p>
-    <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-    <p>The value of each crystal is hidden from you until you click on it and see what has been added to your total score.</p>
-    <p>Each time when the game starts, the game will change the values of each crystal.</p>
-</div>
-<!--random number div-->
-<div id="target-number-div"></div>
-
-<!--win/loss counter div-->
-<div>
-    <div>Wins: <div id="wins-div"></div>
+    <!--heading-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Mystery Crystals</h1>
+            </div>
         </div>
-    <div>Losses: <div id="losses-div"></div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <!--instructions div-->
+            <div class="col-md-12">
+                <p>you will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to
+                    your
+                    total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game if your total score
+                    goes
+                    above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it and see what has been added to
+                    your total
+                    score.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
         </div>
-</div>
+    </div>
 
-<!--four crystal image buttons -->
-<div>
-<button class="crystal-button" id = "pink-crystal"><img src="assets/images/pink-crystal.png" alt="pink crystal" height="150" width="150"></button>
-<button class="crystal-button" id = "orange-crystal"><img src="assets/images/orange crystal.png" alt="orange crystal" height="150" width="150"></button>
-<button class="crystal-button" id = "blue-crystal"><img src="assets/images/blue crystal.png" alt="blue crystal" height="150" width="150"></button>
-<button class="crystal-button" id = "purple-crystal"><img src="assets/images/purple crystal.png" alt="purple crystal" height="150" width="150"></button>
+    <!--win/loss counter div-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div>Wins: <span id="wins-div">0</span> </div>
+            </div>
+            <div class="col-md-6">
+                <div>Losses: <span id="losses-div">0</span> </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!--random number div-->
+                <div>Target:<span id="target-number-div"></span></div>
+            </div>
+            <div class="col-md-6">
+                <!--Current total div-->
+                <div>Your total score is: <span id="total-score-div">0</span></div>
 
-</div>
+            </div>
+        </div>
+    </div>
+    <!--four crystal image buttons -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <button class="crystal-button" id="pink-crystal">
+                    <img src="assets/images/pink-crystal.png" alt="pink crystal" height="150" width="150">
+                </button>
 
-<!--"your total score is:" div-->
-<div>Your total score is: </div>
+                <button class="crystal-button" id="orange-crystal">
+                    <img src="assets/images/orange crystal.png" alt="orange crystal" height="150" width="150">
+                </button>
 
-<!--currenttotal div-->
-<div id="total-score-div"></div>
+                <button class="crystal-button" id="blue-crystal">
+                    <img src="assets/images/blue crystal.png" alt="blue crystal" height="150" width="150">
+                </button>
 
-<script src="assets/javascript/game.js"></script>
+                <button class="crystal-button" id="purple-crystal">
+                    <img src="assets/images/purple crystal.png" alt="purple crystal" height="150" width="150">
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>

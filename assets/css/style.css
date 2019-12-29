@@ -1,0 +1,9 @@
+body {
+    background: url("../images/pow-star.png");
+}
+
+.container {
+    background-color: white;
+    margin-top: 10px;
+    border: grey solid 1px; 
+}
